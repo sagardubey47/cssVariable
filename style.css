@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --spacing : 10px;
+    --blur: 1px;
+    --bgColor:#e15247;
+}
+
+body {
+    background-color: rgb(236, 235, 232);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    /* border: solid 1px black; */
+    background-color: rgb(201, 197, 192);
+    box-shadow: 3px 3px 3px darkgray;
+}
+
+header h1 {
+    padding: 20px;
+    margin-bottom: 10px;
+
+}
+
+main {
+    padding: var(--spacing);
+    box-shadow: 3px 3px 3px rgb(179, 177, 174);
+    background-color: var(--bgColor);
+}
+main img {
+    object-fit: contain;
+    filter: blur(var(--blur));
+}
